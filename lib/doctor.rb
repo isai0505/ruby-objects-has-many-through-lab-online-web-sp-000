@@ -27,4 +27,12 @@ class Doctor
     Appointment.new(date, patient, self)
   end
 
+  def patients
+    genres = []
+    songs.each do |song|
+      genres << song.genre
+    end
+    genres
+  end
+
 end
