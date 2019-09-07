@@ -28,11 +28,11 @@ class Doctor
   end
 
   def patients
-    genres = []
-    songs.each do |song|
-      genres << song.genre
+    patients = []
+    appointments.each do |appointment|
+      patients << appointment.patient
     end
-    genres
+    patients
   end
 
 end
