@@ -12,12 +12,13 @@ class Patient
   def save
     @@all << self
   end
- 
+
   def self.all
     @@all
   end
 
-  def new_appointment
+  def new_appointment(patient, date)
+    Appointment.new(date, patient, self)
   end
 
   def appointments
