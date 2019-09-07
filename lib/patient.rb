@@ -32,7 +32,7 @@ class Patient
     appointments.each do |appointment|
       doctors << appointment.doctor
     end
-    patients
+    doctor
   end
 
 end
